@@ -1,30 +1,32 @@
-
+import allure_commons
 import pytest
-from appium.options.android import UiAutomator2Options
+import config
 from selene.support.shared import browser
+from selene import support
 from appium import webdriver
-from utils.attach_video import attach
+from spelly_mobile_test import utils
 
 
 @pytest.fixture(scope='function', autouse=True)
-def driver_manager():
-    options = UiAutomator2Options().load_capabilities({
-        "platformName": "android",
-        "platformVersion": "9.0",
-        "deviceName": "Samsung Galaxy S10",
-        "app": "bs://c700ce60cf13ae8ed97705a55b8e022f13c5827c",
-        'bstack:options': {
-            "projectName": "First Python project",
-            "buildName": "browserstack-build-1",
-            "sessionName": "BStack first_test",
-            "userName": "olga_rubUyz",
-            "accessKey": "tNKt2nEjirtszq9qdgi2"
-        }
-    })
+def driver_management(): #def driver_management(request):
+    browser.config.timeout = config.settings.timeout
+    browser.config._wait_decorator = support._logging.wait_with(
+        context=allure_commons._allure.StepContext
+    )
 
-    browser.config.driver = webdriver.Remote("http://hub.browserstack.com/wd/hub", options=options)
+    browser.config.driver = webdriver.Remote(
+            config.settings.remote_url, options=config.settings.driver_options
+        )
 
     yield
 
-    #attach(browser)
+    session_id = browser.driver.session_id
+
+    #if config.settings.run_on_browserstack:
+    #    utils.allure.attach.screenshot(name=f'Last screenshot_{session_id}')
+    #    utils.allure.attach.screen_xml_dump(name=f'XML_dump_{session_id}')
+
     browser.quit()
+
+    if config.settings.run_on_browserstack:
+        utils.attach.attach_video_from_browserstack(session_id)

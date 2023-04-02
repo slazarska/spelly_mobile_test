@@ -1,7 +1,7 @@
 import allure
 from selene import be
 from selene.support.shared import browser
-from spelly_mobile_test.model.components.main_screen import MainScreen
+from spelly_mobile_test.model.main_screen import MainScreen
 
 main_screen = MainScreen()
 

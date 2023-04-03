@@ -21,6 +21,9 @@
 <img src="https://github.com/slazarska/petstore_api_test/blob/main/tests/resources/img/icons/pycharm.png" title="PyCharm" alt="PyCharm" width="40" height="40"/>
 <img src="https://github.com/slazarska/petstore_api_test/blob/main/tests/resources/img/icons/pytest.png" title="Pytest" alt="Pytest" width="40" height="40"/>
 <img src="https://github.com/slazarska/petstore_api_test/blob/main/tests/resources/img/icons/selene.png" title="Selene" alt="Selene" width="40" height="40"/>
+<img src="https://github.com/slazarska/petstore_api_test/blob/main/tests/resources/img/icons/android-studio.png" title="Android Studio" alt="Android Studio" width="40" height="40"/>
+<img src="https://github.com/slazarska/petstore_api_test/blob/main/tests/resources/img/icons/appium.png" title="Appium" alt="Appium" width="40" height="40"/>
+<img src="https://github.com/slazarska/petstore_api_test/blob/main/tests/resources/img/icons/browserstack.png" title="Browserstack" alt="Browserstack" width="40" height="40"/>
 <img src="https://github.com/slazarska/petstore_api_test/blob/main/tests/resources/img/icons/Jenkins.png" title="Jenkins" alt="Jenkins"/>
 <img src="https://github.com/slazarska/petstore_api_test/blob/main/tests/resources/img/icons/selenoid.png" title="Selenoid" alt="Selenoid" width="40" height="40"/>
 <img src="https://github.com/slazarska/petstore_api_test/blob/main/tests/resources/img/icons/Allure_Report.png" title="Allure Report" alt="Allure Report"/>

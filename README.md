@@ -1,5 +1,5 @@
 # Automated android tests for mobile application Spelly
-![image](spelly_mobile_test/resources/img/screen/spelly.png)
+<img src="https://github.com/slazarska/spelly_mobile_test/blob/main/resources/img/screen/spelly.png"/>
 
 ## :open_book: Content:
 - [Technology Stack](#gear-technology-stack)
@@ -18,18 +18,18 @@
 ## :gear: Technology Stack:
 <div>
 <img src="https://github.com/slazarska/spelly_mobile_test/blob/main/resources/img/icons/python.png" title="Python" alt="Python" width="40" height="40"/>
-<img src="https://github.com/slazarska/petstore_api_test/blob/main/tests/resources/img/icons/pycharm.png" title="PyCharm" alt="PyCharm" width="40" height="40"/>
-<img src="https://github.com/slazarska/petstore_api_test/blob/main/tests/resources/img/icons/pytest.png" title="Pytest" alt="Pytest" width="40" height="40"/>
-<img src="https://github.com/slazarska/petstore_api_test/blob/main/tests/resources/img/icons/selene.png" title="Selene" alt="Selene" width="40" height="40"/>
-<img src="https://github.com/slazarska/petstore_api_test/blob/main/tests/resources/img/icons/android-studio.png" title="Android Studio" alt="Android Studio" width="40" height="40"/>
-<img src="https://github.com/slazarska/petstore_api_test/blob/main/tests/resources/img/icons/appium.png" title="Appium" alt="Appium" width="40" height="40"/>
-<img src="https://github.com/slazarska/petstore_api_test/blob/main/tests/resources/img/icons/browserstack.png" title="Browserstack" alt="Browserstack" width="40" height="40"/>
-<img src="https://github.com/slazarska/petstore_api_test/blob/main/tests/resources/img/icons/Jenkins.png" title="Jenkins" alt="Jenkins"/>
-<img src="https://github.com/slazarska/petstore_api_test/blob/main/tests/resources/img/icons/selenoid.png" title="Selenoid" alt="Selenoid" width="40" height="40"/>
-<img src="https://github.com/slazarska/petstore_api_test/blob/main/tests/resources/img/icons/Allure_Report.png" title="Allure Report" alt="Allure Report"/>
-<img src="https://github.com/slazarska/petstore_api_test/blob/main/tests/resources/img/icons/AllureTestOps.png" title="AllureTestOps" alt="AllureTestOps"/>
-<img src="https://github.com/slazarska/petstore_api_test/blob/main/tests/resources/img/icons/Jira.png" title="Jira" alt="Jira" width="40" height="40"/>
-<img src="https://github.com/slazarska/petstore_api_test/blob/main/tests/resources/img/icons/Telegram.png" title="Telegram" alt="Telegram"/>
+<img src="https://github.com/slazarska/spelly_mobile_test/blob/main/resources/img/icons/pycharm.png" title="PyCharm" alt="PyCharm" width="40" height="40"/>
+<img src="https://github.com/slazarska/spelly_mobile_test/blob/main/resources/img/icons/pytest.png" title="Pytest" alt="Pytest" width="40" height="40"/>
+<img src="https://github.com/slazarska/spelly_mobile_test/blob/main/resources/img/icons/selene.png" title="Selene" alt="Selene" width="40" height="40"/>
+<img src="https://github.com/slazarska/spelly_mobile_test/blob/main/resources/img/icons/android-studio.png" title="Android Studio" alt="Android Studio" width="40" height="40"/>
+<img src="https://github.com/slazarska/spelly_mobile_test/blob/main/resources/img/icons/appium.png" title="Appium" alt="Appium" width="40" height="40"/>
+<img src="https://github.com/slazarska/spelly_mobile_test/blob/main/resources/img/icons/browserstack.png" title="Browserstack" alt="Browserstack" width="40" height="40"/>
+<img src="https://github.com/slazarska/spelly_mobile_test/blob/main/resources/img/icons/Jenkins.png" title="Jenkins" alt="Jenkins"/>
+<img src="https://github.com/slazarska/spelly_mobile_test/blob/main/resources/img/icons/selenoid.png" title="Selenoid" alt="Selenoid" width="40" height="40"/>
+<img src="https://github.com/slazarska/spelly_mobile_test/blob/main/resources/img/icons/Allure_Report.png" title="Allure Report" alt="Allure Report"/>
+<img src="https://github.com/slazarska/spelly_mobile_test/blob/main/resources/img/icons/AllureTestOps.png" title="AllureTestOps" alt="AllureTestOps"/>
+<img src="https://github.com/slazarska/spelly_mobile_test/blob/main/resources/img/icons/Jira.png" title="Jira" alt="Jira" width="40" height="40"/>
+<img src="https://github.com/slazarska/spelly_mobile_test/blob/main/resources/img/icons/Telegram.png" title="Telegram" alt="Telegram"/>
 </div>
 
 ## :heavy_check_mark: In a nutshell about the project

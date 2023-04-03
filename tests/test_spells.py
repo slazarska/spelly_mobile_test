@@ -21,13 +21,13 @@ class TestsSpells:
         app.spell_screen.go_back_to_main_screen()
 
     @allure.severity(Severity.NORMAL)
-    @allure.title('Check the content on spells screen')
+    @allure.title(' ')
     def test_check_spell_name(self):
         app.main_screen.open_spells_screen()
-        app.spell_screen.check_spells_name_on_the_spell_screen("Alohomora")
+        app.spell_screen.check_spells_name_on_the_spell_screen('Alohomora')
 
     @allure.severity(Severity.NORMAL)
-    @allure.title('Check the content on spells screen')
+    @allure.title(' ')
     def test_spell_has_action(self):
         app.spell_screen.check_action_on_the_spell_screen()
         app.spell_screen.check_spells_type_on_the_spell_screen()

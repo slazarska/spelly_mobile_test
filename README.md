@@ -25,7 +25,6 @@
 <img src="https://github.com/slazarska/spelly_mobile_test/blob/main/resources/img/icons/appium.png" title="Appium" alt="Appium" width="40" height="40"/>
 <img src="https://github.com/slazarska/spelly_mobile_test/blob/main/resources/img/icons/browserstack.png" title="Browserstack" alt="Browserstack" width="40" height="40"/>
 <img src="https://github.com/slazarska/spelly_mobile_test/blob/main/resources/img/icons/Jenkins.png" title="Jenkins" alt="Jenkins"/>
-<img src="https://github.com/slazarska/spelly_mobile_test/blob/main/resources/img/icons/selenoid.png" title="Selenoid" alt="Selenoid" width="40" height="40"/>
 <img src="https://github.com/slazarska/spelly_mobile_test/blob/main/resources/img/icons/Allure_Report.png" title="Allure Report" alt="Allure Report"/>
 <img src="https://github.com/slazarska/spelly_mobile_test/blob/main/resources/img/icons/AllureTestOps.png" title="AllureTestOps" alt="AllureTestOps"/>
 <img src="https://github.com/slazarska/spelly_mobile_test/blob/main/resources/img/icons/Jira.png" title="Jira" alt="Jira" width="40" height="40"/>

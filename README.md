@@ -1,21 +1,21 @@
 # Automated android tests for mobile application Spelly
 <p align="center"><img src="https://github.com/slazarska/spelly_mobile_test/blob/main/resources/img/screen/spelly.png"/></p>
 
-## :open_book: Content:
-- [Technology Stack](#gear-technology-stack)
-- [In a nutshell about the project](#heavy_check_mark-in-a-nutshell-about-the-project)
-- [Checks are implemented](#heavy_check_mark-checks-are-implemented)
+## Content:
+- [Technology Stack](#technology-stack)
+- [In a nutshell about the project](#in-a-nutshell-about-the-project)
+- [Checks are implemented](#checks-are-implemented)
 - Tests launch:
-  - [Jenkins](#-remote-launch-via-jenkins])
+  - [Jenkins](#remote-launch-via-jenkins])
   - [Local](#computer-local-launch )
 - Reporst:
-  - [Allure](#bar_chart-test-reports-available-in-allure)
-  - [BrowserStack](#-browserstack)
-  - [Telegram](#-telegram)
-- [Allure TestOps](#briefcase-intergation-with-allure-testops)
-- [Video](#movie_camera-test-run-video-example)
+  - [Allure](#test-reports-available-in-allure)
+  - [BrowserStack](#browserstack)
+  - [Telegram](#telegram)
+- [Allure TestOps](#intergation-with-allure-testops)
+- [Video](#test-run-video-example)
 
-## :gear: Technology Stack:
+## Technology Stack:
 <div>
 <img src="https://github.com/slazarska/spelly_mobile_test/blob/main/resources/img/icons/python.png" title="Python" alt="Python" width="40" height="40"/>
 <img src="https://github.com/slazarska/spelly_mobile_test/blob/main/resources/img/icons/pycharm.png" title="PyCharm" alt="PyCharm" width="40" height="40"/>
@@ -32,39 +32,40 @@
 <img src="https://github.com/slazarska/spelly_mobile_test/blob/main/resources/img/icons/Telegram.png" title="Telegram" alt="Telegram"/>
 </div>
 
-## :heavy_check_mark: In a nutshell about the project
+## In a nutshell about the project
 - [x] Patterns `Page Object` and `Application Manager`
 - [x] Self-documenting code
 - [x] Custom local launch using `Android Studio` or `Browserstack`
 - [x] Remote launch using `Jenkins` and `Browserstack`
-- [x] `Allure Reports` with attachments of test artifacts: logs, screenshots, videos
+- [x] `Allure Reports` with attachments: logs, screenshots, videos
 - [x] Integration with `Allure TestOps`
 - [x] Integration with `Jira`
 - [x] Notifications about test launch and test results via `Telegram`
 
-## :heavy_check_mark: Checks are implemented:
+## Checks are implemented:
 
 - [X] - Opening spells page
 - [X] - Check the name of spell
 - [X] - Check the attributes on the spells page
+- [X] - Adding the spell to the favorite spells list
 
-## <img title="Jenkins" src=""> Remote launch via [Jenkins]()
+## Remote launch via [Jenkins]()
 
 To run tests from Jenkins:
 1. Click the "Build Now" button.
 <p><img src="" alt="Jenkins"/></p>
 
-## :computer: Local launch 
+## Local launch 
 
 To run locally:
 1. Clone the repository
 2. Install Poetry (`poetry install`)
-3. Open the project in PyCharm, add the interpreter
+3. Open the project in PyCharm, add Python Interpreter
 4. Launch BrowserStack
    - Sign up and get credentials (username, access key), download apk from resources folder to get app id
 5. Install Android Studio and Appium
    - Start Appium Server
-   - Run device emulator with Android Studio
+   - Run device emulator with Virtual Device Manager in Android Studio
 6. Create `env` files in the project folder according to the samples:
     - `config.browserstack.env` 
     - `config.local.env`
@@ -74,15 +75,15 @@ pytest . --alluredir allure-results/
 ```
 8. Check launch status in BrowserStack
 
-### :heavy_plus_sign: Build parameters:
+## Build parameters:
 
 > In the `config.py` file, change the value of `EnvContext`:
 > - `local` — run locally with device emulator
 > - `browserstack` — run in BrowserStack
 
-## :bar_chart: Test reports available in Allure
+## Test reports available in Allure Report:
 
-### <img title="Allure" src=" "> Allure
+<img title="Allure" src=" ">
 
 > When running locally, enter on the command line:
 ```bash
@@ -99,22 +100,22 @@ allure serve .\allure-results
 
 <img src="" alt="BrowserStack"/>
 
-### <img title="Telegram" src=""> Telegram
-
-Sending the notifications with the test report to Telegram via bot is configured
+### *Telegram notification configured:*
 
 <img src="" alt="Telegram"/>
 
-## :briefcase: Intergation with Allure TestOps 
-
-#### 
+## Intergation with Allure TestOps:
 
 <img src=" " alt="Allure TestOps"/>
 
-## :movie_camera: Test run video example
-
-In Allure reports for each test, not only a screenshot is attached, but also a video of the test
+## Added video into tests run. Test run video example:
+![video]()
+<br><br>
 
 <p align="center">
   <img title="Video" src="">
 </p>
+
+Thanks :pray:<br/>
+:green_heart: <a target="_blank" href="https://qa.guru">QA.GURU</a><br/>
+:purple_heart: <a target="_blank" href="https://sites.google.com/view/qasisters/">QA Sisters</a><br/>

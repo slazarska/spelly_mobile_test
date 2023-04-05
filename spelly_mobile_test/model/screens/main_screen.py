@@ -12,7 +12,6 @@ class MainScreen:
 
     @allure.step('Check the main page is opened')
     def check_main_screen_is_opened(self):
-        # elem.should_be(be.in_dom)/ elem.should(be.not_.in_dom)
         browser.element((AppiumBy.ID, "activity_main")).should(be.enabled)
         return self
 

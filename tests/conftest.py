@@ -9,7 +9,7 @@ from spelly_mobile_test import utils
 
 
 @pytest.fixture(scope='function', autouse=True)
-def driver_management(request):
+def driver_management():
     browser.config.timeout = config.settings.timeout
     browser.config._wait_decorator = support._logging.wait_with(
         context=allure_commons._allure.StepContext

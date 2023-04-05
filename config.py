@@ -7,12 +7,12 @@ from appium.options.android import UiAutomator2Options
 
 from spelly_mobile_test import utils
 
-EnvContext = Literal['local', 'browserstack', 'personal']
+EnvContext = Literal['local', 'browserstack']
 
 
 class Settings(pydantic.BaseSettings):
     # --- env by default ---
-    context: EnvContext = 'personal'
+    context: EnvContext = 'browserstack'
 
     # --- Appium Capabilities ---
     platformName: str = None

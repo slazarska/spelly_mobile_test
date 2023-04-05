@@ -29,8 +29,6 @@ class Settings(pydantic.BaseSettings):
     # --- > > BrowserStack credentials---
     browserstackUser: Optional[str] = None
     browserstackKey: Optional[str] = None
-    #browserstackUser: Optional[str] = pydantic.Field(None, env='browserstack.browserstackUser')
-    #browserstackKey: Optional[str] = pydantic.Field(None, env='browserstack.browserstackKey')
     udid: Optional[str] = None
 
     # --- Remote Driver ---

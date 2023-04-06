@@ -1,5 +1,5 @@
-# Automated android tests for mobile application Spelly
-<p align="center"><img src="https://github.com/slazarska/spelly_mobile_test/blob/main/resources/img/screen/spelly.png"/></p>
+# Automated Android tests for the mobile application Spelly
+<img width="10%" title="Spelly App" src="https://github.com/slazarska/spelly_mobile_test/blob/main/resources/img/screen/spelly.png">
 
 ## Content:
 - [Technology Stack](#technology-stack)
@@ -8,12 +8,11 @@
 - Tests launch:
   - [Jenkins](#remote-launch-via-jenkins])
   - [Local](#computer-local-launch )
-- Reporst:
-  - [Allure](#test-reports-available-in-allure)
-  - [BrowserStack](#browserstack)
+- Integrations & Reporst:
+  - [Allure Report](#allure-report-is-connected-to-build-reports) 
+  - [Allure TestOps](#allure-testOps-is-used-as-a-test-management-system)
   - [Telegram](#telegram)
-- [Allure TestOps](#intergation-with-allure-testops)
-- [Video](#test-run-video-example)
+- [Video](#added-video-into-tests-run-test-run-video-example)
 
 ## Technology Stack:
 <div>
@@ -43,16 +42,16 @@
 
 ## Checks are implemented:
 
-- [X] - Opening spells page
-- [X] - Check the name of spell
+- [X] - Opening the spells page
+- [X] - Check the name of the spell
 - [X] - Check the attributes on the spells page
 - [X] - Adding the spell to the favorite spells list
 
-## Remote launch via [Jenkins]()
+## Remote launch via [Jenkins](https://jenkins.autotests.cloud/job/slazarska-py-diplom-mobile/)
 
 To run tests from Jenkins:
 1. Click the "Build Now" button.
-<p><img src="" alt="Jenkins"/></p>
+![image](spelly_mobile_test/resources/img/screen/jenkins.png)
 
 ## Local launch 
 
@@ -60,11 +59,11 @@ To run locally:
 1. Clone the repository
 2. Install Poetry (`poetry install`)
 3. Open the project in PyCharm, add Python Interpreter
-4. Launch BrowserStack
-   - Sign up and get credentials (username, access key), download apk from resources folder to get app id
+4. Launch [BrowserStack](https://app-automate.browserstack.com/)
+   - Sign up and get credentials (username, access key), upload apk from resources folder to get app id
 5. Install Android Studio and Appium
    - Start Appium Server
-   - Run device emulator with Virtual Device Manager in Android Studio
+   - Run device emulator via Virtual Device Manager in Android Studio
 6. Create `env` files in the project folder according to the samples:
     - `config.browserstack.env` 
     - `config.local.env`
@@ -73,48 +72,36 @@ To run locally:
 pytest . --alluredir allure-results/
 ```
 8. Check launch status in BrowserStack
+![image](spelly_mobile_test/resources/img/screen/browserstack1.png)
+![image](spelly_mobile_test/resources/img/screen/browserstack.png)
 
 ## Build parameters:
-
 > In the `config.py` file, change the value of `EnvContext`:
 > - `local` — run locally with device emulator
 > - `browserstack` — run in BrowserStack
 
-## Test reports available in Allure Report:
+## Allure Report is connected to build reports:
+![image](spelly_mobile_test/resources/img/screen/allure_0.png)
+![image](spelly_mobile_test/resources/img/screen/allure_1.png)
 
-<img title="Allure" src=" ">
-
-> When running locally, enter on the command line:
+> If running locally, to check the Allure Report, enter on the command line:
 ```bash
 allure serve .\allure-results
 ```
 
-#### How the tests look in Allure Report:
-
-<p><img src="" alt="Allure"/></p>
-
-<p><img src="" alt="Allure"/></p>
-
-### <img title="BrowserStack" src=""> BrowserStack
-
-<img src="" alt="BrowserStack"/>
-
-### *Telegram notification configured:*
-
-<img src="" alt="Telegram"/>
-
-## Intergation with Allure TestOps:
-
-<img src=" " alt="Allure TestOps"/>
-
-## Added video into tests run. Test run video example:
-![video]()
+## Allure TestOps is used as a Test Management System:
+![image](spelly_mobile_test/resources/img/screen/testops1.png)
+![image](spelly_mobile_test/resources/img/screen/testops0.png)
 <br><br>
-
-<p align="center">
-  <img title="Video" src="">
-</p>
-
+## Integration Jira with Allure TestOps is configured:
+![image](spelly_mobile_test/resources/img/screen/jira.png)
+<br><br>
+## Telegram notification configured:
+![image](spelly_mobile_test/resources/img/screen/bot.png)
+<br><br>
+## Added video into tests run. Test run video example:
+![video](spelly_mobile_test/resources/img/screen/video.gif)
+<br><br>
 Thanks :pray:<br/>
 :green_heart: <a target="_blank" href="https://qa.guru">QA.GURU</a><br/>
 :purple_heart: <a target="_blank" href="https://sites.google.com/view/qasisters/">QA Sisters</a><br/>

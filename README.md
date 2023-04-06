@@ -6,12 +6,13 @@
 - [In a nutshell about the project](#in-a-nutshell-about-the-project)
 - [Checks are implemented](#checks-are-implemented)
 - Tests launch:
-  - [Jenkins](#remote-launch-via-jenkins])
-  - [Local](#computer-local-launch )
+  - [Jenkins](#remote-launch-via-jenkins)
+  - [Local](#local-launch )
 - Integrations & Reporst:
   - [Allure Report](#allure-report-is-connected-to-build-reports) 
   - [Allure TestOps](#allure-testOps-is-used-as-a-test-management-system)
-  - [Telegram](#telegram)
+  - [Jira](#integration-Jira-with-allure-testOps-is-configured)
+  - [Telegram](#telegram-notifications-are-configured)
 - [Video](#added-video-into-tests-run-test-run-video-example)
 
 ## Technology Stack:
@@ -96,7 +97,7 @@ allure serve .\allure-results
 ## Integration Jira with Allure TestOps is configured:
 ![image](resources/img/screen/jira.png)
 <br><br>
-## Telegram notification configured:
+## Telegram notifications are configured:
 ![image](resources/img/screen/bot.png)
 <br><br>
 ## Added video into tests run. Test run video example:

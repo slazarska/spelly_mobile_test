@@ -1,5 +1,5 @@
 # Automated Android tests for the mobile application Spelly
-<img width="70%" title="Spelly App" src="https://github.com/slazarska/spelly_mobile_test/blob/main/resources/img/screen/spelly.png">
+<img width="50%" title="Spelly App" src="https://github.com/slazarska/spelly_mobile_test/blob/main/resources/img/screen/spelly.png">
 
 ## Content:
 - [Technology Stack](#technology-stack)

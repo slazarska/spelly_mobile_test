@@ -1,5 +1,5 @@
 # Automated Android tests for the mobile application Spelly
-<img width="10%" title="Spelly App" src="https://github.com/slazarska/spelly_mobile_test/blob/main/resources/img/screen/spelly.png">
+<img width="70%" title="Spelly App" src="https://github.com/slazarska/spelly_mobile_test/blob/main/resources/img/screen/spelly.png">
 
 ## Content:
 - [Technology Stack](#technology-stack)
@@ -51,7 +51,7 @@
 
 To run tests from Jenkins:
 1. Click the "Build Now" button.
-![image](spelly_mobile_test/resources/img/screen/jenkins.png)
+![image](resources/img/screen/jenkins.png)
 
 ## Local launch 
 
@@ -72,8 +72,8 @@ To run locally:
 pytest . --alluredir allure-results/
 ```
 8. Check launch status in BrowserStack
-![image](spelly_mobile_test/resources/img/screen/browserstack1.png)
-![image](spelly_mobile_test/resources/img/screen/browserstack.png)
+![image](resources/img/screen/browserstack1.png)
+![image](resources/img/screen/browserstack.png)
 
 ## Build parameters:
 > In the `config.py` file, change the value of `EnvContext`:
@@ -81,8 +81,8 @@ pytest . --alluredir allure-results/
 > - `browserstack` — run in BrowserStack
 
 ## Allure Report is connected to build reports:
-![image](spelly_mobile_test/resources/img/screen/allure_0.png)
-![image](spelly_mobile_test/resources/img/screen/allure_1.png)
+![image](resources/img/screen/allure_0.png)
+![image](resources/img/screen/allure_1.png)
 
 > If running locally, to check the Allure Report, enter on the command line:
 ```bash
@@ -90,17 +90,17 @@ allure serve .\allure-results
 ```
 
 ## Allure TestOps is used as a Test Management System:
-![image](spelly_mobile_test/resources/img/screen/testops1.png)
-![image](spelly_mobile_test/resources/img/screen/testops0.png)
+![image](resources/img/screen/testops1.png)
+![image](resources/img/screen/testops0.png)
 <br><br>
 ## Integration Jira with Allure TestOps is configured:
-![image](spelly_mobile_test/resources/img/screen/jira.png)
+![image](resources/img/screen/jira.png)
 <br><br>
 ## Telegram notification configured:
-![image](spelly_mobile_test/resources/img/screen/bot.png)
+![image](resources/img/screen/bot.png)
 <br><br>
 ## Added video into tests run. Test run video example:
-![video](spelly_mobile_test/resources/img/screen/video.gif)
+![video](resources/img/screen/video.gif)
 <br><br>
 Thanks :pray:<br/>
 :green_heart: <a target="_blank" href="https://qa.guru">QA.GURU</a><br/>

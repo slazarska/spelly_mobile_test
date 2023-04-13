@@ -72,14 +72,28 @@ To run locally:
 ```bash
 pytest . --alluredir allure-results/
 ```
+## Build parameters:
+
+```bash
+pytest . --alluredir allure-results/
+```
+> In terminal 
+> - for local run with device emulator:
+```bash
+env -S "context=local" pytest . --alluredir allure-results/
+```
+> - for remote run in BrowserStack:
+```bash
+env -S "context=browserstack" pytest . --alluredir allure-results/
+```
+
+> Or in the `config.py` file, change the value of `EnvContext`:
+> - `local` — run locally with device emulator
+> - `browserstack` — run in BrowserStack
+
 8. Check launch status in BrowserStack
 ![image](resources/img/screen/browserstack1.png)
 ![image](resources/img/screen/browserstack.png)
-
-## Build parameters:
-> In the `config.py` file, change the value of `EnvContext`:
-> - `local` — run locally with device emulator
-> - `browserstack` — run in BrowserStack
 
 ## Allure Report is connected to build reports:
 ![image](resources/img/screen/allure_0.png)

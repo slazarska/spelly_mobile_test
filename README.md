@@ -48,7 +48,7 @@
 - [X] - Check the attributes on the spells page
 - [X] - Adding the spell to the favorite spells list
 
-## Remote launch via [Jenkins](https://jenkins.autotests.cloud/job/slazarska-py-diplom-mobile/)
+## Remote launch via [Jenkins](https://jenkins.autotests.cloud/job/Students/job/slazarska-py-diplom-mobile/)
 
 To run tests from Jenkins:
 1. Click the "Build Now" button.
